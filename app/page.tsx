@@ -23,7 +23,7 @@ const item = {
 export default function HomePage() {
   return (
     <section className="min-h-[70vh] flex flex-col items-center justify-center text-center space-y-8 ">
-      <motion.div className="hero-fg p-8 rounded-3xl glass-card max-w-4xl" variants={container} initial="hidden" animate="show">
+      {/* <motion.div className="hero-fg p-8 rounded-3xl glass-card max-w-4xl" variants={container} initial="hidden" animate="show">
         <motion.div variants={item}>
           <h1 className="text-5xl font-extrabold">Automehaničarska Radnja "Brzi Servis"</h1>
         </motion.div>
@@ -35,7 +35,51 @@ export default function HomePage() {
         <motion.div variants={item} className="mt-6 flex items-center justify-center space-x-4">
           <a className="btn-accent" href="#usluge">Pogledajte usluge</a>
           <a className="px-6 py-3 rounded-full border border-white/10 text-sm" href="#kontakt">Kontaktirajte nas</a>
-        </motion.div>
+        </motion.div> */}
+        <motion.div 
+  className="
+    hero-fg 
+    p-6 sm:p-8 md:p-10 
+    px-6 sm:px-10 md:px-12 
+    rounded-3xl 
+    glass-card 
+    max-w-4xl 
+    mx-auto
+  " 
+  variants={container} 
+  initial="hidden" 
+  animate="show"
+>
+
+  <motion.div variants={item}>
+    <h1 className="text-4xl sm:text-5xl font-extrabold text-center">
+      Automehaničarska Radnja "Brzi Servis"
+    </h1>
+  </motion.div>
+
+  <motion.div variants={item} className="mt-4">
+    <p className="text-base sm:text-lg text-gray-300 text-center">
+      Vaš pouzdan partner za sve vrste popravki i održavanja vozila. 
+      Kvalitet, brzina i povjerenje na jednom mjestu!
+    </p>
+  </motion.div>
+
+  <motion.div 
+    variants={item} 
+    className="mt-6 flex items-center justify-center space-x-3 sm:space-x-4"
+  >
+    <a className="btn-accent" href="#usluge">Pogledajte usluge</a>
+
+    <a 
+      className="px-5 py-3 rounded-full border border-white/10 text-sm" 
+      href="#kontakt"
+    >
+      Kontaktirajte nas
+    </a>
+  </motion.div>
+
+
+
 
         <motion.div variants={item} className="mt-8">
           <img
