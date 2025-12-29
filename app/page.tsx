@@ -36,54 +36,44 @@ export default function HomePage() {
           <a className="btn-accent" href="#usluge">Pogledajte usluge</a>
           <a className="px-6 py-3 rounded-full border border-white/10 text-sm" href="#kontakt">Kontaktirajte nas</a>
         </motion.div> */}
-        <motion.div 
-  className="
-    hero-fg 
-    p-6 sm:p-8 md:p-10 
-    px-6 sm:px-10 md:px-12 
-    rounded-3xl 
-    glass-card 
-    max-w-4xl 
-    mx-auto
-  " 
-  variants={container} 
-  initial="hidden" 
-  animate="show"
->
 
-  <motion.div variants={item}>
-    <h1 className="text-4xl sm:text-5xl font-extrabold text-center">
-      Automehaničarska Radnja "Brzi Servis"
-    </h1>
-  </motion.div>
+      <motion.div
+        className="hero-fg p-6 sm:p-8 md:p-10 px-6 sm:px-10 md:px-12 rounded-3xl glass-card max-w-4xl mx-auto"
+        variants={container}
+        initial="hidden"
+        animate="show"
+      >
+        <motion.div variants={item}>
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-center">
+            Auto Servis MEDO
+          </h1>
 
-  <motion.div variants={item} className="mt-4">
-    <p className="text-base sm:text-lg text-gray-300 text-center">
-      Vaš pouzdan partner za sve vrste popravki i održavanja vozila. 
-      Kvalitet, brzina i povjerenje na jednom mjestu!
-    </p>
-  </motion.div>
+        </motion.div>
 
-  <motion.div 
-    variants={item} 
-    className="mt-6 flex items-center justify-center space-x-3 sm:space-x-4"
-  >
-    <a className="btn-accent" href="#usluge">Pogledajte usluge</a>
+        <motion.div variants={item} className="mt-4">
+          <p className="text-base sm:text-lg text-gray-300 text-center">
+            Vaš pouzdan partner za sve vrste popravki i održavanja vozila.
+            Kvalitet, brzina i povjerenje na jednom mjestu!
+          </p>
+        </motion.div>
 
-    <a 
-      className="px-5 py-3 rounded-full border border-white/10 text-sm" 
-      href="#kontakt"
-    >
-      Kontaktirajte nas
-    </a>
-  </motion.div>
-
-{/* nista */}
+        <motion.div
+          variants={item}
+          className="mt-6 flex items-center justify-center space-x-3 sm:space-x-4"
+        >
+          <a className="btn-accent" href="#usluge">Pogledajte usluge</a>
+          <a
+            className="px-5 py-3 rounded-full border border-white/10 text-sm"
+            href="#kontakt"
+          >
+            Kontaktirajte nas
+          </a>
+        </motion.div>
 
 
         <motion.div variants={item} className="mt-8">
           <img
-            src="https://mssgracanica.skolatk.edu.ba/cimage/news/image-86.png"
+            src="/m1.jpg"
             alt="Automehaničarska radnja"
             className="w-full rounded-2xl object-cover max-h-64"
           />
@@ -92,19 +82,19 @@ export default function HomePage() {
 
       <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl w-full" variants={container} initial="hidden" animate="show">
         <motion.div variants={item} whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }} className="glass-card p-6 rounded-2xl cursor-pointer">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQao66XxTk-F_kQFjlooKtwjIlfL8jKQIOYLA&s" alt="Brza dijagnostika" className="w-full h-40 object-cover rounded-md mb-4" />
+          <img src="/m3.png" alt="Brza dijagnostika" className="w-full h-40 object-cover rounded-md mb-4" />
           <h3 className="font-semibold text-xl">Brza dijagnostika</h3>
           <p className="text-gray-300 mt-2">Savremena oprema za brzo otkrivanje kvarova na vozilu.</p>
         </motion.div>
 
         <motion.div variants={item} whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }} className="glass-card p-6 rounded-2xl cursor-pointer">
-          <img src="https://www.smsfojnica.com/images/obrazovni-profili/automehanicar.jpg" alt="Iskusni majstori" className="w-full h-40 object-cover rounded-md mb-4" />
+          <img src="/m4.png" alt="Iskusni majstori" className="w-full h-40 object-cover rounded-md mb-4" />
           <h3 className="font-semibold text-xl">Iskusni majstori</h3>
           <p className="text-gray-300 mt-2">Naš tim čine certificirani i iskusni automehaničari.</p>
         </motion.div>
 
         <motion.div variants={item} whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }} className="glass-card p-6 rounded-2xl cursor-pointer">
-          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=public" alt="Garancija na rad" className="w-full h-40 object-cover rounded-md mb-4" />
+          <img src="/m5.jpg" alt="Garancija na rad" className="w-full h-40 object-cover rounded-md mb-4" />
           <h3 className="font-semibold text-xl">Garancija na rad</h3>
           <p className="text-gray-300 mt-2">Garantujemo kvalitet i sigurnost za svaki urađeni posao.</p>
         </motion.div>

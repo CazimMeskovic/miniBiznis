@@ -14,7 +14,13 @@ export default function Header() {
       <header className="w-full py-6 px-6 flex items-center justify-between glass-card relative">
         <div className="flex items-center space-x-4">
           <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#7c5cff] to-[#5eead4] shadow-lg" />
-          <h1 className="text-xl font-bold">Automehaničarska Radnja "Brzi Servis"</h1>
+          <div>
+            <h1 className="text-xl font-bold">Auto Servis MEDO</h1>
+            <div className="text-xs text-gray-400 leading-tight">
+              Ulica Servisna 10, 71000 Sarajevo<br />
+              Tel: <a href="tel:+38761123456" className="underline hover:text-[#7c5cff]">+387 61 123 456</a>
+            </div>
+          </div>
         </div>
 
         {/* Desktop meni */}

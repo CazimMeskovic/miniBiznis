@@ -28,6 +28,11 @@ export default function ServicesPage() {
           </div>
         ))}
       </div>
+      {/*  <div className="mt-10 text-center text-sm text-gray-400">
+        <strong>Automehaničarska Radnja "Brzi Servis"</strong><br />
+        Ulica Servisna 10, 71000 Sarajevo<br />
+        Tel: <a href="tel:+38761123456" className="underline hover:text-[#7c5cff]">+387 61 123 456</a>
+      </div> */}
     </section>
   )
 }
