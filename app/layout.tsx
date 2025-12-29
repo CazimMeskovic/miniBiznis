@@ -36,29 +36,29 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: 'Autoservis Medo',
-    description:
-      'Profesionalni autoservis – dijagnostika, mehanika i kompletan servis vozila.',
-    url: 'https://autoservis-medo.ba', // promijeni ako je druga domena
+    description: 'Auto mehanika, dijagnostika i servis',
+
+    type: 'website',
+    locale: 'bs_BA',
+    url: 'https://autoservis-medo.ba/',
     siteName: 'Autoservis Medo',
     images: [
       {
         url: '/m1.jpg',
         width: 1200,
         height: 630,
-        alt: 'Autoservis Medo – profesionalni auto servis',
+        alt: 'Autoservis Medo',
       },
     ],
-    locale: 'bs_BA',
-    type: 'website',
   },
-
   twitter: {
     card: 'summary_large_image',
     title: 'Autoservis Medo',
-    description:
-      'Auto servis, dijagnostika i mehanika – brzo i pouzdano.',
+    description: 'Auto mehanika, dijagnostika i servis',
     images: ['/m1.jpg'],
   },
+
+
 
   metadataBase: new URL('https://autoservis-medo.ba'),
 }
